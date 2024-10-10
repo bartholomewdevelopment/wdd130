@@ -66,22 +66,17 @@
   }
 
 
-  
-  /*.hero {
+  .hero {
     position: relative;
   }
 
   h1 {
     position: absolute;
-    top: 10%;
-    left: 5%
   }
 
   article {
     position: absolute;
-    top: 10%;
-    left: 5%
-  } */
+  } 
 
   .hero img {
     display:block;
