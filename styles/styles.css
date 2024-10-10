@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: steelblue; 
     --text-color: white; 
@@ -9,12 +15,6 @@
     --padding-medium: 20px; 
     --padding-large: 1rem; 
     --max-width: 840px; 
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 nav {
@@ -47,10 +47,10 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px var(--shadow-color);
     float: right;
-    margin: 1rem;
 }
 
 aside {
+    position: relative;
     width: 20rem;
     text-align: center;
 }
@@ -62,8 +62,8 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 47px;
-    left: 150px;
+    top: 65px;
+    left: 225px;
 }
 
 footer {
