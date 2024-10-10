@@ -3,6 +3,7 @@
     --secondary-color: #56494C;
     --accent1-color: #C2D3CD;
     --accent2-color: #769193;
+    --accent2-color-transparent: rgba(118, 145, 147, 0.5);
     --background-color: #eee; 
     --heading-font: Roboto;
     --text-font: Poppins;
@@ -52,8 +53,20 @@
     font-style: italic;
   }
 
+  nav {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 900;
+    margin-left: 20px;
+  }
+  
   h1, h2, h3 {
-    color: #000;
+    color: var(--primary-color);
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -65,17 +78,29 @@
     font-style: normal;
   }
 
-
   .hero {
     position: relative;
   }
 
-  h1 {
+  main h1 {
     position: absolute;
+    top: 50px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--accent2-color-transparent);
+    text-align: center;
+    font-size: 100px;
   }
 
-  article {
+  main article {
     position: absolute;
+    top: 325px;
+    left: 20%;
+    width: 60%;
+    padding: 20px;
+    background-color: var(--accent2-color-transparent);
+    text-align: center;
+    font-size: larger;
   } 
 
   .hero img {
@@ -85,13 +110,12 @@
   }
 
   article img {
-    float: right;
+    float: left;
+    max-width: 30%;
   }
 
-  .sociallinks a img {
-    max-width: 50px;
-    height: auto;
-    margin: 0 5px;
+  .image-description {
+    margin-left: 20px;;
   }
 
   footer {
@@ -100,3 +124,9 @@
     padding: 20px;
     text-align: center;
 }
+
+  .sociallinks a img {
+    max-width: 50px;
+    height: auto;
+    margin: 0 5px;
+  }
