@@ -10,6 +10,8 @@
     color: #000;
     
   }
+
+  
   
   .roboto-light {
     font-family: "Roboto", sans-serif;
@@ -53,17 +55,42 @@
     font-style: italic;
   }
 
-  nav {
+  header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    padding: 10px;
+    max-width: fit-content;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
     padding-bottom: 20px;
     padding-top: 20px;
   }
+
+  header nav img {
+    max-width: 150px;
+    height: auto;
+  }
   
-  nav a {
-    text-decoration: none;
+  header nav a {
+    text-decoration: underline;
+    font-weight: bold;
     color: var(--secondary-color);
     font-weight: 900;
     margin-left: 20px;
+    border: 1px solid black;
+    background-color: gray;
+    height: fit-content;
+    color: white;
+    padding: 5px;
   }
+
+
+  
   
   h1, h2, h3 {
     color: var(--primary-color);
